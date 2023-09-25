@@ -6,7 +6,7 @@ import csv
 import os.path
 
 
-url = "https://services.utdallas.edu/transit/garages/_code.php"  # Replace with the actual URL of the website
+url = "https://services.utdallas.edu/transit/garages/_code.php"  
 def scrape_website_and_save(url):
     response = requests.get(url)
     while True:
