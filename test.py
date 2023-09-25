@@ -50,5 +50,5 @@ def scrape_website_and_save(url):
         else:
             print("Error: Unable to retrieve data from the website.")
 
-# Call the function to start scraping and saving data
+
 scrape_website_and_save(url)
