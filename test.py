@@ -43,7 +43,7 @@ def scrape_website_and_save(url):
                                 writer.writerow({'Date': date.date(), 'Hour': hour, 'Minute': minute, 'Permit Type': permit_type, 'Spaces Left': spaces_left})
                             else:
                                 permit_type = column.get_text()
-                            # Example: Extracting data from the second column()  # Example: Extracting data from the third column
+                            
 
             print("Data saved successfully.")
             time.sleep(scraping_interval) 
