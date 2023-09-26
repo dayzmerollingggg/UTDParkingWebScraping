@@ -26,15 +26,17 @@ jobs:
       - name: execute py script # run main.py
         run: python test.py
 
-      - name: commit files
+      - name: Set up Git
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main 
+          git config --global user.email "actions@example.com"
+          git config --global user.name "GitHub Actions"
+          git fetch
+          git checkout main
+
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git commit -m "Automated commit from GitHub Actions"
+          git push origin main
+        env:
+          TOKEN: ${{ secrets.UTD_WEB_SCRAPE_KEY }}
