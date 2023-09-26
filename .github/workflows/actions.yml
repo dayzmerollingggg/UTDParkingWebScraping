@@ -1,9 +1,9 @@
 name: run test.py
 
 on: 
-  push:
-    paths:
-      - '**.py'
+  schedule:
+    - cron: '*/30 7-18 * * *'  # Every 30 seconds from 7 am to 6 pm
+    - cron: '0 0-6,19-23 * * *'  # Every hour from 12 am to 6 am and 7 pm to 11 pm
 jobs: 
   build: 
     runs-on: ubuntu-latest
