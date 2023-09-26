@@ -26,17 +26,17 @@ jobs:
       - name: execute py script # run main.py
         run: python test.py
 
-      - name: Set up Git
-        run: |
-          git config --global user.email "dayzmerollingggg@users.noreply.github.com"
-          git config --global user.name "Daisy Gan"
-          git fetch
-          git checkout main
+      # - name: Set up Git
+      #   run: |
+      #     git config --global user.email "dayzmerollingggg@users.noreply.github.com"
+      #     git config --global user.name "Daisy Gan"
+      #     git fetch
+      #     git checkout main
 
-      - name: Commit and Push Changes
-        run: |
-          git add .
-          git commit -m "Automated commit from GitHub Actions"
-          git push origin main
-        env:
-          TOKEN: ${{ secrets.UTD_WEB_SCRAPE_KEY }}
+      # - name: Commit and Push Changes
+      #   run: |
+      #     git add .
+      #     git commit -m "Automated commit from GitHub Actions"
+      #     git push origin main
+      #   env:
+      #     TOKEN: ${{ secrets.UTD_WEB_SCRAPE_KEY }}
