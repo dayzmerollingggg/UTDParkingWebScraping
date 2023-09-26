@@ -24,7 +24,7 @@ jobs:
           pip install beautifulsoup4
 
       - name: execute py script # run main.py
-        run: python test.py
+        run: python main.py
 
       # - name: Set up Git
       #   run: |
@@ -33,10 +33,10 @@ jobs:
       #     git fetch
       #     git checkout main
 
-      # - name: Commit and Push Changes
-      #   run: |
-      #     git add .
-      #     git commit -m "Automated commit from GitHub Actions"
-      #     git push origin main
-      #   env:
-      #     TOKEN: ${{ secrets.UTD_WEB_SCRAPE_KEY }}
+      - name: add and commit
+        run: |
+          git add .
+          git commit -m "Automated commit from GitHub Actions"
+          git push origin main
+        env:
+          TOKEN: ${{ secrets.UTD_WEB_SCRAPE_KEY }}
