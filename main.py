@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import time
-import datetime
+from datetime import datetime, timedelta
 import csv
 import os.path
 
@@ -16,7 +16,7 @@ def scrape_website_and_save(url):
         tables = soup.find_all('table', class_='parking')
 
         for i, table in enumerate(tables, start=1):
-            current_date = datetime.date.today()  
+            current_date = datetime.now() - timedelta(hours=5)
 
             # Convert the integer to a string representation of the day of the week
             day_name = current_date.strftime('%A')
@@ -36,7 +36,7 @@ def scrape_website_and_save(url):
                 
                 for row in rows:
                     columns = row.find_all('td', attrs={'class': ["rightalign", "parking_gold","parking_orange","parking_purple","parking_pay_by_space"]})
-                    date = datetime.datetime.now()
+                    date = datetime.now() - timedelta(hours=5)
                     hour = date.hour
                     minute = date.minute
                     permit_type = ''
