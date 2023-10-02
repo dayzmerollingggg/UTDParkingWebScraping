@@ -706,3 +706,10 @@ Date,Hour,Minute,Permit Type,Spaces Left
 2023-10-02,12,6,Orange Permit,0
 2023-10-02,12,6,Purple Permit,1
 2023-10-02,12,6,Pay-By-Space,5
+2023-10-02,12,23,Gold Permit,0
+2023-10-02,12,23,Gold Permit,5
+2023-10-02,12,23,Gold Permit,0
+2023-10-02,12,23,Orange Permit,0
+2023-10-02,12,23,Orange Permit,3
+2023-10-02,12,23,Purple Permit,0
+2023-10-02,12,23,Pay-By-Space,10
