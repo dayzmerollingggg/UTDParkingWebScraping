@@ -5872,3 +5872,10 @@ Date,Hour,Minute,Permit Type,Spaces Left
 2023-12-01,12,47,Orange Permit,8
 2023-12-01,12,47,Purple Permit,23
 2023-12-01,12,47,Pay-By-Space,24
+2023-12-01,13,9,Gold Permit,123
+2023-12-01,13,9,Gold Permit,4
+2023-12-01,13,9,Gold Permit,0
+2023-12-01,13,9,Orange Permit,130
+2023-12-01,13,9,Orange Permit,10
+2023-12-01,13,9,Purple Permit,24
+2023-12-01,13,9,Pay-By-Space,26
